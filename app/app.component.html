@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+<h2> Name: Bo</h2>
+<h2>Age: 30 </h2>
+
+
+<br/>
+<button (click)="Showtag()">Click</button>
+<h2 *ngIf="Showme">Hello Bo, vous avez 30 ans </h2>
+<div class="container">
+  <h1>Consultant registration</h1>
+  <form #userForm="ngForm">
+    <div>
+      <h2> Hello</h2> {{userForm.value | json}}
+
+    </div>
+    
+
+    <div class="form-group">
+      <label for="name"> name</label> <br/>
+      <input type="text" class="form-control" name="name" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="age"> age</label> <br/>
+      <input type="text" class="form-control" name="age" ngModel>
+    </div>
+  </form>
+</div>
