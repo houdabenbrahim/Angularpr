@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ArtikComponent } from './artik/artik.component';
 
 
 @NgModule({
 
   declarations: [
-    AppComponent
+    AppComponent,
+    ArtikComponent
   ],
 
   imports: [
