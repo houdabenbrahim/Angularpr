@@ -1,0 +1,11 @@
+<div class="artik-page">
+    <h2>{{artikPersonnalised.titre}}</h2>
+    <p>{{artikPersonnalised.description}}</p>
+    <img [src]="artikPersonnalised.imageUrl" [alt]="artikPersonnalised.titre">
+    <p>
+        <button (click)="onlike()">Suivre Artik</button>
+        {{artikPersonnalised.like}}
+    </p>
+</div>
+
+
