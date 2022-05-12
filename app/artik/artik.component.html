@@ -1,10 +1,13 @@
 <div class="artik-page">
-    <h2>{{artikPersonnalised.titre}}</h2>
-    <p>{{artikPersonnalised.description}}</p>
+    <h2>{{artikPersonnalised.titre | titlecase}}</h2>
+    <p> On line since {{artikPersonnalised.date | date: 'medium'}}</p>
     <img [src]="artikPersonnalised.imageUrl" [alt]="artikPersonnalised.titre">
+    <br>
+    <br>
+    <p>{{artikPersonnalised.description}}</p>
     <p>
-        <button (click)="onlike()">Suivre Artik</button>
-        {{artikPersonnalised.like}}
+        <button (click)="onfollow()">Suivre Artik</button>
+        <span [ngStyle]="{color: 'rgb(0,' + artikPersonnalised.like + ', 00'}"> 👍 {{artikPersonnalised.like}}</span>
     </p>
 </div>
 
