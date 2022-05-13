@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ArtikComponent } from './artik/artik.component';
+import { ArtikListComponent } from './artik-list/artik-list.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
 
   declarations: [
     AppComponent,
-    ArtikComponent
+    ArtikComponent,
+    ArtikListComponent,
+    HeaderComponent
   ],
 
   imports: [
