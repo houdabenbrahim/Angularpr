@@ -1,10 +1,10 @@
 export class ArtikPersonnalised {
-    constructor(public titre: string,
-        public description: string,
-        public imageUrl: string, 
-        public date: Date,
-        public like: number){
-
-    }
+    id!: number;
+    titre!: string;
+    description!: string;
+    imageUrl!: string;
+    date!: Date;
+    like!: number;
 
 }
+
