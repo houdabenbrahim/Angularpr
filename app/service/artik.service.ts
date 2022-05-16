@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { ArtikListComponent } from "../artik-list/artik-list.component";
 import { ArtikPersonnalised } from "../models/artik.model";
 
 

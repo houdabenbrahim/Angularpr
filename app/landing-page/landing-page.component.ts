@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  emailInput!: string;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmitForm() {
+    console.log(this.emailInput);
   }
 
 }
